@@ -1,0 +1,108 @@
+section {
+  display: block;
+  position: relative;
+  padding: 60px 0;
+}
+section .section-title {
+  text-align: center;
+  color: #313131;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#footer {
+  background: #191814 !important;
+}
+#footer h5{
+	 padding-left: 10px;
+   border-left: 3px solid #eeeeee;
+   padding-bottom: 6px;
+   margin-bottom: 20px;
+   color:#ffffff;
+}
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+  margin-top: -33px !important;
+}
+#footer ul.social li a:hover{
+  color:#ffd369;
+}
+#footer ul.quick-links li{
+	-webkit-transition: .2s all ease;
+	-moz-transition: .2s all ease;
+	transition: .2s all ease;
+}
+
+#footer ul.quick-links li a i{
+  margin-left: -20px;
+  padding-right: 35px;
+  margin-top: -50px;
+
+}
+#footer ul.quick-links li:hover a i {
+  color: #ffffff !important;
+}
+.myp{
+  margin-top: -25px;
+  margin-left:7px;
+  color: #82807d;
+ }
+.myp:hover{
+  color: #fff;
+}
+
+@media (max-width:767px){
+
+#footer h5 {
+  padding-left: 0;
+  border-left: transparent;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+#footer ul.quick-links li a i{
+  margin-left: -150px;
+  padding-right: -35px;
+  margin-top: -50px;}
+}
+
+.fa {
+  color:#ffd369;
+}
+.btn-nl{
+  color: #393e46;
+  background-color: #ffd369 !important;
+  border: none !important;
+  margin-left: -6px;
+  padding: 3px 10px 3px 7px !important;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: .5s all;
+  font-weight: bold;
+}
+.btn-nl:hover{
+  background-color: #393e46 !important;
+  color: #ffd369 !important;
+}

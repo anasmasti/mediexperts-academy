@@ -1,0 +1,28 @@
+.chiffre_page_bg{
+  background-color: white;
+}
+.chiffre{
+  font-size: 50px; color: #ffd369;
+}
+.chiffre_lable{
+  font-size: 30px; color: white;
+}
+.card{
+  background-color: #393e46;
+}
+@media only screen and (min-width: 326px) and (max-width: 480px) {
+  .chiffre{
+    font-size: 40px;
+  }
+  .chiffre_lable{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 324px) {
+  .chiffre{
+    font-size: 40px;
+  }
+  .chiffre_lable{
+    font-size: 20px;
+  }
+}

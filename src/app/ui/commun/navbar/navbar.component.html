@@ -1,0 +1,27 @@
+<div class="my-menu">
+  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-dark bg-transp">
+    <img draggable="false" src="./assets/img/logo.png" alt="Mediexpert Academy" class="logo mt-3 mt-md-2 mt-lg-3" >
+    <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon mt-lg-3" style=" background-image: url('https://image.flaticon.com/icons/svg/482/482609.svg') !important; z-index: 11111;" ></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-expand-md" id="navbarNav">
+        <ul class="navbar-nav ml-auto" style="margin-top: -12px !important;">
+          <li class="nav-item">
+              <a class="nav-link my-item-menu" [routerLink]="['/']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }"> <i class="fas fa-home"></i> Accueil </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link my-item-menu" [routerLink]="['/about']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fas fa-info-circle" ></i> Qui sommes-nous</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-item-menu" [routerLink]="['/services']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fas fa-concierge-bell"></i> Nos services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-item-menu" [routerLink]="['/formations']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fas fa-book-open"></i> Nos formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-item-menu" [routerLink]="['/contact']" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }"><i class="fas fa-phone-alt"></i> Contactez-nous</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+</div>

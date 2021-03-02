@@ -1,0 +1,49 @@
+.bg-header {
+  background-image: url("/../../../../assets/img/head11.png");
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+}
+.down{
+  display: inline-block;
+  margin-left: 50%;
+  padding: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+  height: 50px;
+  margin-top: 70px !important;
+  color:#393e46;
+  transition: .5s all;
+  animation: Makedown 2s infinite;
+  animation-timing-function: ease-in-out;
+}
+.down:hover{
+  color: #ffd369;
+}
+@keyframes Makedown {
+  0% {
+    transform: translateY(0px);
+     }
+  50% {
+    transform: translateY(30px);
+     }
+  100% {
+    transform: translateY(0);
+       }
+}
+
+@media only screen and (min-width: 326px) and (max-width: 480px) {
+  .down{
+    margin-top: 25px !important;
+   }
+}
+@media only screen and (max-width: 324px) {
+  .down{
+    margin-top: 20px !important;
+   }
+}

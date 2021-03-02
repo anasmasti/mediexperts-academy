@@ -1,0 +1,15 @@
+.contact_form_bg{
+  background-color: #ffd369;
+  color:#393e46;
+}
+.contact_info_bg{
+  background-color: #ffffff;
+  color:#393e46;
+}
+.form-control{
+  border-radius: .5em;
+  border: none;
+}
+.contact_icon{
+  color:#ffd369 ;
+}
