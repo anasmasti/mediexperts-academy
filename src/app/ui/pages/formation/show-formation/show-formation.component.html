@@ -6,18 +6,18 @@
   <div class="row">
     <app-loading-spinner *ngIf="loading"></app-loading-spinner>
     <div class="col-12 col-lg-8">
-       <img class="single_formation_img" src="{{single_formation.url_img}}" alt="{{single_formation.name}}">
-       <div class="single_formation_description p-4 mt-5">
-        <h3 class="txt_bold">Description</h3>
-        <p>{{single_formation.description}}</p>
-       </div>
-       <div class="single_formation_avantage p-4 mt-2">
-        <h3 class="txt_bold">Avantage</h3>
-        <p>{{(single_formation.avantage == null) ? '----' : single_formation.avantage }}</p>
-       </div>
-       <div class="single_formation_programme p-4 mt-2">
-        <h3 class="txt_bold mb-3">Programme</h3>
-        <div id="targetTag" #targetTag>{{single_formation?.programme}}</div>
+      <img class="single_formation_img" src="{{single_formation.url_img}}" alt="{{single_formation.name}}">
+      <div class="single_formation_description p-4 mt-5">
+       <h3 class="txt_bold">Description</h3>
+       <p>{{single_formation.description}}</p>
+      </div>
+      <div class="single_formation_avantage p-4 mt-2">
+       <h3 class="txt_bold">Avantage</h3>
+       <p>{{(single_formation.avantage == null) ? '----' : single_formation.avantage }}</p>
+      </div>
+      <div class="single_formation_programme p-4 mt-2">
+       <h3 class="txt_bold mb-3">Programme</h3>
+       <div id="targetTag" #targetTag>{{single_formation?.programme}}</div>
       </div>
     </div>
     <div class="col-12 col-lg-4 single_formation_info py-4 px-0">
