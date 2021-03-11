@@ -1,0 +1,16 @@
+.formation_card{
+  padding: 0px;
+  cursor: pointer;
+}
+a .formation_img{
+  width: 220px;
+  border-radius: 15px;
+}
+a .formation_p{
+  font-size: 13px;
+  width: 220px;
+}
+a .formation_date{
+  font-size: 12px;
+  color: #989898;
+}

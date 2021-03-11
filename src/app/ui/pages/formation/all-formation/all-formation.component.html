@@ -1,9 +1,15 @@
+<div class="container my-5 py-5 h-100" >
+  <h1 class="normal_title txt_bold mt-5">Formations</h1>
+  <div class="row">
+    <app-domaine (domaine_idEvent)="receiveDomaineId($event)"></app-domaine>
+  </div>
+  <div class="row mt-2">
+    <app-theme [domaine_id]="domaine_id" (theme_idEvent)="receiveThemeId($event)"></app-theme>
+  </div>
+  <div class="row mt-2">
+    <app-formation [theme_id]="theme_id"></app-formation>
+  </div>
+</div>
 
-  <div class="container my-5 py-5 h-100" >
-    <h1 class="normal_title txt_bold mt-5">Formations</h1>
-    <div class="row mt-4">
-     <app-domaine></app-domaine>
-     <app-formation></app-formation>
-   </div>
- </div>
+
 

@@ -1,1 +1,39 @@
-<p>show-formation works!</p>
+<div class="container my-5 py-5 h-100" >
+  <div class="row  ">
+   <a [routerLink]="['/formation']" class="btn_back ml-2 mr-3"><i class="fas fa-chevron-left fa-2x"></i></a>
+  </div>
+   <h1 class="normal_title txt_bold mt-5">Formation {{single_formation.name}}</h1>
+  <div class="row">
+    <app-loading-spinner *ngIf="loading"></app-loading-spinner>
+    <div class="col-12 col-lg-8">
+       <img class="single_formation_img" src="{{single_formation.url_img}}" alt="{{single_formation.name}}">
+       <div class="single_formation_description p-4 mt-5">
+        <h3 class="txt_bold">Description</h3>
+        <p>{{single_formation.description}}</p>
+       </div>
+       <div class="single_formation_avantage p-4 mt-2">
+        <h3 class="txt_bold">Avantage</h3>
+        <p>{{(single_formation.avantage == null) ? '----' : single_formation.avantage }}</p>
+       </div>
+       <div class="single_formation_programme p-4 mt-2">
+        <h3 class="txt_bold mb-3">Programme</h3>
+        <div id="targetTag" #targetTag>{{single_formation?.programme}}</div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4 single_formation_info py-4 px-0">
+      <ul class="single_formation_ul">
+        <li><span class="formation_certif badge bg-success text-white mb-2" *ngIf="single_formation.certif">Attestation Disponible</span></li>
+        <li><h6 class="txt_bold mt-5 d-inline">Prix: </h6><p class="d-inline">{{single_formation.prix}} MAD.</p></li>
+        <li><h6 class="txt_bold d-inline">Duration: </h6> <p class="d-inline">{{single_formation.duration}}.</p></li>
+        <li><h6 class="txt_bold d-inline">Catégory: </h6> <p class="d-inline">{{single_formation.category}}.</p></li>
+        <li><h6 class="txt_bold d-inline">Professeur: </h6> <p class="d-inline">{{single_formation.professeur}}.</p></li>
+        <li><h6 class="txt_bold d-inline">Prérequis: </h6><p class="d-inline">{{single_formation.prerequisite}}.</p></li>
+        <li><h6 class="txt_bold d-inline">Publiée le: </h6><p class="d-inline blockquote-footer">{{single_formation.created_at | date}}.</p></li>
+        <li class="mt-4"><a class="btn btn-standard  mr-2 d-inline" >Inscription</a><a class="btn btn-second d-inline" [routerLink]="['/contact']">Contactez-nous</a></li>
+      </ul>
+   </div>
+  </div>
+</div>
+
+
+

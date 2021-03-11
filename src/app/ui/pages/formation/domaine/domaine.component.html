@@ -1,8 +1,6 @@
-<div class="container my-5 py-5 h-100" >
-  <div class="card mt-5">
-    <div class="card-body">
-      <h5 class="card-title">Web</h5>
-      <p class="card-text">Content</p>
-    </div>
-  </div>
-  </div>
+<app-loading-spinner *ngIf="loading"></app-loading-spinner>
+<ul class="nav nav-tabs" >
+  <li class="nav-item" *ngFor="let d of (domaines$ | async)">
+    <a class="nav-link active mr-1" (click)="getDomaineId(d.id)" >{{d.name}}</a>
+  </li>
+</ul>

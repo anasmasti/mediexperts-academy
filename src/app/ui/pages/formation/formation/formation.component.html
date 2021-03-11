@@ -1,8 +1,14 @@
-<div class="container my-5 py-5 h-100" >
-<div class="card mt-5">
-  <div class="card-body">
-    <h5 class="card-title">Angular</h5>
-    <p class="card-text">Content</p>
-  </div>
-</div>
+<app-loading-spinner *ngIf="loading"></app-loading-spinner>
+<div class="row">
+ <div class="card mt-5 formation_card" *ngFor="let f of formations">
+   <a [routerLink]="['/formations', f.id ]">
+     <div class="card-body">
+       <img class="formation_img" src="{{f.url_img}}" alt="">
+       <h5 class="card-title txt_bold mt-2">{{ f.name }}</h5>
+       <p class="card-text formation_p">Publiée le: {{ (f.description.length>66)?(f.description | slice:0:66)+'..':(f.description)}}</p>
+       <span class="formation_certif badge bg-success text-white" *ngIf="f.certif">Attestation Disponible</span>
+       <p class="card-text formation_date mt-1">Publiée le: {{ f.created_at | date }}</p>
+     </div>
+   </a>
+ </div>
 </div>
