@@ -2,15 +2,19 @@
   padding: 0px;
   cursor: pointer;
 }
-a .formation_img{
+.formation_img{
   width: 220px;
   border-radius: 15px;
 }
-a .formation_p{
+.formation_p{
   font-size: 13px;
   width: 220px;
 }
-a .formation_date{
+.formation_date{
   font-size: 12px;
   color: #989898;
+}
+a:hover{
+  color: black;
+  text-decoration: none;
 }

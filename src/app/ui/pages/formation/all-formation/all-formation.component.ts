@@ -20,5 +20,4 @@ export class AllFormationComponent implements OnInit {
   receiveThemeId($event : any){
     this.theme_id = $event
   }
-
 }

@@ -1,4 +1,5 @@
-import { AfterViewInit, Component , EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { AfterViewInit, Component , EventEmitter, Inject, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Theme } from 'src/app/models/theme.model';
@@ -18,8 +19,9 @@ export class ThemeComponent implements OnInit, OnChanges {
   @Input() domaine_id = 0
   @Output() theme_idEvent = new EventEmitter<any>()
   loading: boolean = false
+  isClicked: boolean = false
 
-  constructor(private store: Store<AppState>) { }
+  constructor(private store: Store<AppState>,  @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
     this.store.dispatch(getThemesAction())
@@ -39,6 +41,7 @@ export class ThemeComponent implements OnInit, OnChanges {
     })
   }
   getThemeId(id: any){
+
     this.theme_idEvent.emit(id)
    }
 }

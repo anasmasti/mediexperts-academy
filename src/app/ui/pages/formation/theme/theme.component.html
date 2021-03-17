@@ -1,7 +1,7 @@
 <app-loading-spinner *ngIf="loading"></app-loading-spinner>
 <ul class="nav nav-tabs">
-  <li class="nav-item" *ngFor="let t of themes">
-    <a class="nav-link active mr-1"  (click)="getThemeId(t.id)">{{t?.name}}</a>
+  <li class="nav-item" *ngFor="let t of themes; let i = index">
+    <a class="nav-link mr-1" (click)="getThemeId(t.id)">{{t?.name}}</a>
   </li>
 </ul>
 
