@@ -1,5 +1,5 @@
 .bg-header {
-  background-image: url("/../../../../assets/img/landing_img.png");
+  background-image: url("/../../../../assets/img/backgrounds/landing_bg.png");
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,6 +8,7 @@
   right: 0px;
   top: 0px;
   background-color: white;
+  z-index: -9999;
 }
 .down{
   display: inline-block;
@@ -22,6 +23,7 @@
 .down:hover{
   color: #ffd369;
 }
+
 @keyframes Makedown {
   0% {
     transform: translateY(0px);

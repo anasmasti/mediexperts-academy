@@ -1,5 +1,8 @@
 .chiffre_page_bg{
-  background-color: white;
+  background-color: #393e46;
+  z-index: -9999 !important;
+  color: white;
+  text-align: center;
 }
 .chiffre{
   font-size: 50px; color: #ffd369;
