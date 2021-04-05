@@ -1,4 +1,4 @@
 import { createAction, props } from "@ngrx/store";
 
 export const setLoadingAction = createAction('[Shared State] set loading',
- props<{statu: boolean}>())
+    props<{ statu: boolean }>())

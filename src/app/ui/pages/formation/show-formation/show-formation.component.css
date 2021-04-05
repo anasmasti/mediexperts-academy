@@ -1,68 +1,74 @@
-.single_formation_img{
-  width: 720px;
-  border-radius: 15px;
+.single_formation_img {
+    width: 720px;
+    border-radius: 15px;
 }
-.single_formation_ul{
-  list-style-type: none;
+
+.single_formation_ul {
+    list-style-type: none;
 }
-.single_formation_info{
-  background-color: #ffffff;
-  color:#393e46;
-  border-radius: 1.5rem;
-  height: 250px;
-  position: fixed;
-  right: 15px;
+
+.single_formation_info {
+    background-color: #ffffff;
+    color: #393e46;
+    border-radius: 1.5rem;
+    height: 250px;
+    position: fixed;
+    right: 15px;
 }
-.single_formation_avantage{
-  color:#393e46;
-  border-radius: 1.5rem;
+
+.single_formation_avantage {
+    color: #393e46;
+    border-radius: 1.5rem;
 }
-.single_formation_description{
-  background-color: #ffd369;
-  color:#393e46;
-  border-radius: 1.5rem;
+
+.single_formation_description {
+    background-color: #ffd369;
+    color: #393e46;
+    border-radius: 1.5rem;
 }
-.single_formation_programme{
-  background-color: #ffffff;
-  color:#393e46;
-  border-radius: 1.5rem;
+
+.single_formation_programme {
+    background-color: #ffffff;
+    color: #393e46;
+    border-radius: 1.5rem;
 }
-.btn_back{
-  color:#393e46;
+
+.btn_back {
+    color: #393e46;
 }
-.btn_back:hover{
-  color:#ffd369;
+
+.btn_back:hover {
+    color: #ffd369;
 }
 
 @media only screen and (min-width: 326px) and (max-width: 480px) {
-  .single_formation_img{
-    width: 320px;
-    border-radius: 15px;
-  }
-  .single_formation_info{
-    background-color: #ffffff;
-    color:#393e46;
-    border-radius: 1.5rem;
-    height: 260px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-  }
+    .single_formation_img {
+        width: 320px;
+        border-radius: 15px;
+    }
+    .single_formation_info {
+        background-color: #ffffff;
+        color: #393e46;
+        border-radius: 1.5rem;
+        height: 260px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
 }
+
 @media only screen and (max-width: 324px) {
-  .single_formation_img{
-    width: 220px;
-    border-radius: 15px;
-  }
-  .single_formation_info{
-    background-color: #ffffff;
-    color:#393e46;
-    border-radius: 1.5rem;
-    height: 260px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-  }
+    .single_formation_img {
+        width: 220px;
+        border-radius: 15px;
+    }
+    .single_formation_info {
+        background-color: #ffffff;
+        color: #393e46;
+        border-radius: 1.5rem;
+        height: 260px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
 }
-
-

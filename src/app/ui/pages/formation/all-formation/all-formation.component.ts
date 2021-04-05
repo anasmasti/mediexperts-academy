@@ -14,10 +14,10 @@ export class AllFormationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  receiveDomaineId($event : any){
+  receiveDomaineId($event: any) {
     this.domaine_id = $event
   }
-  receiveThemeId($event : any){
+  receiveThemeId($event: any) {
     this.theme_id = $event
   }
 }

@@ -3,10 +3,10 @@ import { Formation } from "src/app/models/formation.model";
 import { Theme } from "src/app/models/theme.model";
 
 export interface FormationState {
-  formation : Formation[]
-  theme : Theme[]
-  domaine : Domaine[]
-  single_formation : Formation[]
+  formation: Formation[]
+  theme: Theme[]
+  domaine: Domaine[]
+  single_formation: Formation[]
 }
 
 export const initialState: FormationState = {

@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { AfterViewInit, Component , EventEmitter, Inject, Input, OnChanges, OnInit, Output } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Inject, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Theme } from 'src/app/models/theme.model';
@@ -21,13 +21,13 @@ export class ThemeComponent implements OnInit, OnChanges {
   loading: boolean = false
   isClicked: boolean = false
 
-  constructor(private store: Store<AppState>,  @Inject(DOCUMENT) private document: Document) { }
+  constructor(private store: Store<AppState>, @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
     this.store.dispatch(getThemesAction())
     this.store.select(getLoading).subscribe(data => {
       this.loading = data
-     })
+    })
     this.store.select(getTheme).subscribe((data: Theme[]) => {
       this.themes = data
     })
@@ -36,12 +36,12 @@ export class ThemeComponent implements OnInit, OnChanges {
     this.store.select(getThemeByDomaine, {
       domaine_id: this.domaine_id
     })
-    .subscribe(data => {
-      this.themes = data
-    })
+      .subscribe(data => {
+        this.themes = data
+      })
   }
-  getThemeId(id: any){
+  getThemeId(id: any) {
 
     this.theme_idEvent.emit(id)
-   }
+  }
 }

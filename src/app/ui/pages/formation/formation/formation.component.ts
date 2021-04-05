@@ -22,22 +22,22 @@ export class FormationComponent implements OnInit, OnChanges {
   constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
-   this.store.dispatch(getFormationsAction())
+    this.store.dispatch(getFormationsAction())
 
-   this.store.select(getLoading).subscribe(data => {
-    this.loading = data
-   })
-   this.store.select(getFormation).subscribe(data => {
-    this.formations = data
-   })
+    this.store.select(getLoading).subscribe(data => {
+      this.loading = data
+    })
+    this.store.select(getFormation).subscribe(data => {
+      this.formations = data
+    })
   }
 
   ngOnChanges(): void {
     this.store.select(getFormationByTheme, {
       theme_id: this.theme_id
     })
-    .subscribe(data => {
-      this.formations = data
-     })
+      .subscribe(data => {
+        this.formations = data
+      })
   }
 }

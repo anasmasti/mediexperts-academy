@@ -1,4 +1,4 @@
-export interface SharedState{
+export interface SharedState {
   loading: boolean
 }
 

@@ -1,31 +1,38 @@
-.chiffre_page_bg{
-  background-color: #393e46;
-  z-index: -9999 !important;
-  color: white;
-  text-align: center;
+.chiffre_page_bg {
+    background-color: #393e46;
+    z-index: -9999 !important;
+    color: white;
+    text-align: center;
 }
-.chiffre{
-  font-size: 50px; color: #ffd369;
+
+.chiffre {
+    font-size: 50px;
+    color: #ffd369;
 }
-.chiffre_lable{
-  font-size: 30px; color: white;
+
+.chiffre_lable {
+    font-size: 30px;
+    color: white;
 }
-.card{
-  background-color: #393e46;
+
+.card {
+    background-color: #393e46;
 }
+
 @media only screen and (min-width: 326px) and (max-width: 480px) {
-  .chiffre{
-    font-size: 40px;
-  }
-  .chiffre_lable{
-    font-size: 20px;
-  }
+    .chiffre {
+        font-size: 40px;
+    }
+    .chiffre_lable {
+        font-size: 20px;
+    }
 }
+
 @media only screen and (max-width: 324px) {
-  .chiffre{
-    font-size: 40px;
-  }
-  .chiffre_lable{
-    font-size: 20px;
-  }
+    .chiffre {
+        font-size: 40px;
+    }
+    .chiffre_lable {
+        font-size: 20px;
+    }
 }

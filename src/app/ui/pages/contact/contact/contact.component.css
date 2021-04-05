@@ -1,17 +1,20 @@
-.contact_form_bg{
-  background-color: #ffd369;
-  color:#393e46;
-  border-radius: 1.5rem;
+.contact_form_bg {
+    background-color: #ffd369;
+    color: #393e46;
+    border-radius: 1.5rem;
 }
-.contact_info_bg{
-  background-color: #ffffff;
-  color:#393e46;
-  border-radius: 1.5rem;
+
+.contact_info_bg {
+    background-color: #ffffff;
+    color: #393e46;
+    border-radius: 1.5rem;
 }
-.form-control{
-  border-radius: .5em;
-  border: none;
+
+.form-control {
+    border-radius: .5em;
+    border: none;
 }
-.contact_icon{
-  color:#ffd369 ;
+
+.contact_icon {
+    color: #ffd369;
 }

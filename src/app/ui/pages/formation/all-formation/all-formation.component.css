@@ -1,11 +1,12 @@
-.nav-tabs .nav-link.active{
-  background-color: #ffd369;
-  border-radius: 2rem;
-  color: #393e46;
-  border: none;
+.nav-tabs .nav-link.active {
+    background-color: #ffd369;
+    border-radius: 2rem;
+    color: #393e46;
+    border: none;
 }
-a{
-  color: #393e46;
-  border: none;
-  cursor: pointer;
+
+a {
+    color: #393e46;
+    border: none;
+    cursor: pointer;
 }

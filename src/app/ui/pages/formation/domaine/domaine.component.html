@@ -1,6 +1,6 @@
 <app-loading-spinner *ngIf="loading"></app-loading-spinner>
-<ul class="nav nav-tabs" >
-  <li class="nav-item" *ngFor="let d of (domaines$ | async)">
-    <a class="nav-link active mr-1" (click)="getDomaineId(d.id)" >{{d.name}}</a>
-  </li>
+<ul class="nav nav-tabs">
+    <li class="nav-item" *ngFor="let d of (domaines$ | async)">
+        <a class="nav-link active mr-1" (click)="getDomaineId(d.id)">{{d.name}}</a>
+    </li>
 </ul>

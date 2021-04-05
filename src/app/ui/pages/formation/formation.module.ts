@@ -25,7 +25,8 @@ const routes: Routes = [
     FormationComponent,
     DomaineComponent,
     LoadingSpinnerComponent,
-    ThemeComponent ],
+    ThemeComponent
+  ],
   imports: [
     RouterModule.forChild(routes),
     CommonModule,

@@ -1,20 +1,24 @@
-.formation_card{
-  padding: 0px;
-  cursor: pointer;
+.formation_card {
+    padding: 0px;
+    cursor: pointer;
 }
-.formation_img{
-  width: 220px;
-  border-radius: 15px;
+
+.formation_img {
+    width: 220px;
+    border-radius: 15px;
 }
-.formation_p{
-  font-size: 13px;
-  width: 220px;
+
+.formation_p {
+    font-size: 13px;
+    width: 220px;
 }
-.formation_date{
-  font-size: 12px;
-  color: #989898;
+
+.formation_date {
+    font-size: 12px;
+    color: #989898;
 }
-a:hover{
-  color: black;
-  text-decoration: none;
+
+a:hover {
+    color: black;
+    text-decoration: none;
 }

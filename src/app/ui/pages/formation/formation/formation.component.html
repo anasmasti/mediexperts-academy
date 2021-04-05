@@ -1,17 +1,18 @@
 <app-loading-spinner *ngIf="loading"></app-loading-spinner>
 <div class="row">
- <div class="row p-5" *ngIf="formations.length == 0">
-   <h3 class="txt_bold" style="color: #c5c5c5;">Aucune formation pour l'instant.</h3>
- </div>
- <div *ngFor="let f of formations">
-   <a [routerLink]="['/formations', f.id ]" class="card mt-5 formation_card">
-     <div class="card-body">
-       <img class="formation_img" src="{{f.url_img}}" alt="">
-       <h5 class="card-title txt_bold mt-2">{{ f.name }}</h5>
-       <p class="card-text formation_p">Publiée le: {{ (f.description.length>66)?(f.description | slice:0:66)+'..':(f.description)}}</p>
-       <span class="formation_certif badge bg-success text-white" *ngIf="f.certif">Attestation Disponible</span>
-       <p class="card-text formation_date mt-1">Publiée le: {{ f.created_at | date }}</p>
-     </div>
-   </a>
- </div>
+    <div class="row p-5" *ngIf="formations.length == 0">
+        <h3 class="txt_bold" style="color: #c5c5c5;">Aucune formation pour l'instant.</h3>
+    </div>
+    <div *ngFor="let f of formations">
+        <a [routerLink]="['/formations', f.id ]" class="card mt-5 formation_card">
+            <div class="card-body">
+                <img class="formation_img" src="{{f.url_img}}" alt="">
+                <h5 class="card-title txt_bold mt-2">{{ f.name }}</h5>
+                <p class="card-text formation_p">Publiée le: {{ (f.description.length>66)?(f.description | slice:0:66)+'..':(f.description)}}
+                </p>
+                <span class="formation_certif badge bg-success text-white" *ngIf="f.certif">Attestation Disponible</span>
+                <p class="card-text formation_date mt-1">Publiée le: {{ f.created_at | date }}</p>
+            </div>
+        </a>
+    </div>
 </div>

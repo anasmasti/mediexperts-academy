@@ -2,8 +2,8 @@ import { SharedState } from "./shared/shared.state";
 import { sharedReducer } from "./shared/shared.reducer";
 
 export interface AppState {
-  shared : SharedState;
+  shared: SharedState;
 }
 export const appReducer = {
-  shared : sharedReducer
+  shared: sharedReducer
 }
