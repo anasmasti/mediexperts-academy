@@ -1,3 +1,3 @@
-## Mediexperts Academy 🎓
+## Mediexperts Academy  🎓
 
 > Mediexperts &copy; 2021
